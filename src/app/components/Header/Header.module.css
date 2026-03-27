@@ -10,7 +10,6 @@
   position: sticky;
   top: 0;
   z-index: 50;
-  min-width: 0;
 }
 
 .logoButton {
@@ -49,12 +48,6 @@
   background: var(--color-border);
 }
 
-.divider {
-  height: 1rem;
-  width: 1px;
-  background: var(--color-border);
-}
-
 .title {
   font-size: 0.875rem;
   color: var(--color-text-secondary);
@@ -66,13 +59,12 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-  min-width: 0;
 }
 
-.contributionsLabel {
-  font-size: 0.75rem;
-  color: var(--color-text-muted);
-  white-space: nowrap;
+.divider {
+  height: 1rem;
+  width: 1px;
+  background: var(--color-border);
 }
 
 .userBadge {
@@ -84,6 +76,12 @@
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 10rem;
+}
+
+.contributionsLabel {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  white-space: nowrap;
 }
 
 .contributions {
@@ -98,23 +96,14 @@
     padding: 0 1rem;
   }
 
-  .logoButton {
-    gap: 0.5rem;
-  }
-
-  .title {
+  .logoDivider,
+  .title,
+  .contributions,
+  .divider {
     display: none;
-  }
-
-  .logoDivider {
-    display: none;
-  }
-
-  .nav {
-    gap: 0.5rem;
   }
 
   .userBadge {
-    max-width: 6rem;
+    max-width: 8rem;
   }
 }

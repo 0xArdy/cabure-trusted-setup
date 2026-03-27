@@ -7,7 +7,6 @@ import { useParticipant } from "@/hooks/useParticipant";
 import styles from "./Header.module.css";
 
 export function Header({
-  step,
   onLogoClick,
 }: {
   step: CeremonyStep;
@@ -21,7 +20,6 @@ export function Header({
   const shortName = config.branding.shortName;
   const totalContributions = status?.totalContributions;
   const displayName = isAuthenticated ? participantName : undefined;
-  const stepLabel = copy.header.steps[step];
 
   return (
     <header className={styles.header}>
