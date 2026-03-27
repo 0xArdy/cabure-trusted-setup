@@ -27,17 +27,13 @@ export function Header({
     <header className={styles.header}>
       <button onClick={onLogoClick} className={styles.logoButton}>
         <div className={styles.logoIcon}>
-          <span className={styles.logoText}>
-            {shortName ?? "TS"}
-          </span>
+          <span className={styles.logoText}>{shortName ?? "TS"}</span>
         </div>
-        <div className={styles.divider} />
+        <div className={styles.logoDivider} />
         <span className={styles.title}>{copy.header.title}</span>
       </button>
 
       <div className={styles.nav}>
-        <span className={styles.stepLabel}>{stepLabel}</span>
-        <div className={styles.divider} />
         {displayName && (
           <>
             <span className={styles.userBadge}>@{displayName}</span>
@@ -46,8 +42,9 @@ export function Header({
         )}
         <div className={styles.contributions}>
           <div className="accentDot" />
-          <span className={styles.stepLabel}>
-            {(totalContributions ?? 0).toLocaleString()} {copy.header.contributionsLabel}
+          <span className={styles.contributionsLabel}>
+            {(totalContributions ?? 0).toLocaleString()}{" "}
+            {copy.header.contributionsLabel}
           </span>
         </div>
       </div>
