@@ -1,0 +1,52 @@
+{
+  "ceremony": {
+    "name": "cabure-trusted-setup",
+    "slug": "cabure-trusted-setup",
+    "targetContributions": 500,
+    "endDate": null,
+    "startedAt": 1774620857133,
+    "initializedAt": "2026-03-27T14:14:17.133Z",
+    "genesisChainHash": "0x0000000000000000000000000000000000000000000000000000000000000000"
+  },
+  "circuits": [
+    {
+      "circuitId": "commitment",
+      "label": "Commitment",
+      "genesisZkeyHash": "0xfd2542145349184c060ba6ee6a9dd49d0bb25ff4d1cc6011fa8361eb245293f9",
+      "genesisZkeySize": 689224,
+      "genesisZkeyUrl": "https://yoinfjkdjf6pi1jd.public.blob.vercel-storage.com/cabure-trusted-setup/zkeys/commitment/current.zkey",
+      "genesisZkeyPath": "cabure-trusted-setup/zkeys/commitment/current.zkey",
+      "localZkeyPath": "public/genesis/commitment.genesis.zkey",
+      "r1csPath": "circuits/commitment.r1cs",
+      "ptauPath": "circuits/pot_final.ptau"
+    },
+    {
+      "circuitId": "merkleTree",
+      "label": "MerkleTree",
+      "genesisZkeyHash": "0xfdb1593eb950d896e526cf4eeb26b0c0c6715fdc71b4f11f339f7cb1a8b7b06f",
+      "genesisZkeySize": 8177308,
+      "genesisZkeyUrl": "https://yoinfjkdjf6pi1jd.public.blob.vercel-storage.com/cabure-trusted-setup/zkeys/merkleTree/current.zkey",
+      "genesisZkeyPath": "cabure-trusted-setup/zkeys/merkleTree/current.zkey",
+      "localZkeyPath": "public/genesis/merkleTree.genesis.zkey",
+      "r1csPath": "circuits/merkleTree.r1cs",
+      "ptauPath": "circuits/pot_final.ptau"
+    },
+    {
+      "circuitId": "withdraw",
+      "label": "Withdraw",
+      "genesisZkeyHash": "0x849fcfaea35057e941b92ec5e7a2c5434205c92ab5c00079539b6b5ee7b4eb97",
+      "genesisZkeySize": 17580584,
+      "genesisZkeyUrl": "https://yoinfjkdjf6pi1jd.public.blob.vercel-storage.com/cabure-trusted-setup/zkeys/withdraw/current.zkey",
+      "genesisZkeyPath": "cabure-trusted-setup/zkeys/withdraw/current.zkey",
+      "localZkeyPath": "public/genesis/withdraw.genesis.zkey",
+      "r1csPath": "circuits/withdraw.r1cs",
+      "ptauPath": "circuits/pot_final.ptau"
+    }
+  ],
+  "storage": {
+    "manifestPath": "ceremony:manifest",
+    "circuitStatePrefix": "ceremony:circuits",
+    "receiptsPath": "ceremony:receipts",
+    "zkeyPrefix": "cabure-trusted-setup/zkeys"
+  }
+}
